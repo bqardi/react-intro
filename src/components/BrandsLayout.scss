@@ -1,0 +1,39 @@
+@import "../variables.scss";
+
+.brandsLayout{
+    padding-top: $mainPadding * 4;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: calc(100vh - 122px - 78px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title{
+        color: white;
+        font-weight: 500;
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        gap: 1em;
+        background-color: black;
+        border: 1.5em solid white;
+        padding: $mainPadding;
+    }
+    &__heading{
+        color: $gold;
+        margin-bottom: $mainPadding / 2;
+    }
+    &__text{
+        color: white;
+        margin-bottom: $mainPadding / 2;
+    }
+    &__link{
+        color: $gold;
+    }
+}

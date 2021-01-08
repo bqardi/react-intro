@@ -1,0 +1,10 @@
+@import "../variables.scss";
+
+.hero{
+    height: 100vh;
+    background-image: url("../images/frontpage_headerimg.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -$siteHeaderHeight;
+}

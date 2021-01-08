@@ -1,0 +1,33 @@
+@import "../variables.scss";
+
+.socialImage{
+    position: relative;
+    &__image{
+        display: block;
+        width: 100%;
+        filter: grayscale(100%);
+        transition: filter .3s;
+    }
+    &__abscenter{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__icon{
+        width: 128px;
+        height: 128px;
+        transition: transform .3s, fill .5s;
+    }
+    &:hover &__image{
+        filter: grayscale(0);
+    }
+    &:hover &__icon{
+        fill: $gold;
+        transform: scale(1.5);
+    }
+}

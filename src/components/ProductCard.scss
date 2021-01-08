@@ -1,0 +1,50 @@
+@import "../variables.scss";
+
+.productCard{
+    $width: 240px;
+    // width: $width;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    transition: box-shadow .3s;
+    &__imageContainer{
+        border: 1px solid hsl(0, 0%, 95%);
+        overflow: hidden;
+    }
+    &__image{
+        width: $width;
+        height: $width;
+        object-fit: contain;
+        transition: transform .3s;
+    }
+    &__description{
+        font-size: 1.1em;
+        font-weight: 500;
+        padding: 0.5em 1em;
+        text-align: center;
+    }
+    &__prices{
+        display: flex;
+        margin-bottom: 1em;
+        color: $gold;
+    }
+    &__retail{
+        margin: 0 0.5em;
+        &.js-disabled{
+            text-decoration: line-through;
+            color: $grayed;
+        }
+    }
+    &__price{
+        &.js-disabled{
+            display: none;
+        }
+    }
+    &:hover{
+        box-shadow: 3px 3px 15px 1px rgba(0, 0, 0, 0.15);
+    }
+    &:hover &__image{
+        transform: scale(1.1);
+    }
+}

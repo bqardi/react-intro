@@ -1,0 +1,31 @@
+@import "../variables.scss";
+
+.categoryElement{
+    position: relative;
+    background-color: $gold;
+    overflow: hidden;
+    &__image{
+        width: 100%;
+        filter: sepia(100%) brightness(50%);
+        transition: transform .3s, filter .3s;
+    }
+    &__text{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.1em;
+        text-decoration: underline;
+    }
+    &:hover &__image{
+        transform: scale(1.1);
+        filter: sepia(0%) brightness(100%);
+    }
+}

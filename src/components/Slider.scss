@@ -1,0 +1,45 @@
+@import "../variables.scss";
+
+.slider{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 600px;
+    background-color: white;
+    &__title{
+        position: absolute;
+        top: 2em;
+        left: 3em;
+        font-size: 2em;
+        font-weight: 500;
+        max-width: 200px;
+        color: $gold;
+        line-height: 1em;
+    }
+    &__link{
+        display: flex;
+        align-items: center;
+        &--large{
+            height: 100%;
+            width: 100%;
+            max-height: 400px;
+            max-width: 1200px;
+        }
+    }
+    &__icon{
+        width: 96px;
+        height: 96px;
+        margin: 2em;
+        fill: $gold;
+        transition: fill .3s;
+    }
+    &__image{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+    &__link:hover &__icon{
+        fill: darken($gold, 10);
+    }
+}

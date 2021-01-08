@@ -1,0 +1,37 @@
+@import "../variables.scss";
+
+.siteFooter{
+    background-color: $gold;
+    padding: $mainPadding;
+    display: flex;
+    justify-content: space-between;
+    &__side{
+        display: flex;
+        gap: 1em;
+    }
+    &__address{
+        font-style: normal;
+    }
+    &__policies{
+        color: white;
+        display: flex;
+        gap: 0.7em;
+        & a{
+            color: white;
+            &:hover{
+                color: $hover;
+            }
+        }
+    }
+    &__social{
+        display: flex;
+        gap: 0.5em;
+        &Icon svg{
+            width: 30px;
+            height: 30px;
+        }
+        &Icon:hover svg{
+            fill: $hover;
+        }
+    }
+}

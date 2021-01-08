@@ -1,0 +1,23 @@
+@import "../variables.scss";
+
+.siteMain{
+    min-height: calc(100vh - 98px);
+    background-color: hsl(0, 0%, 8%);
+    &--topSpace{
+        margin-top: -$siteHeaderHeight;
+        padding-top: $siteHeaderHeight;
+    }
+    &--brandImage{
+        background-image: url("../images/brands_headerimage.jpg");
+    }
+    &--grid{
+        display: flex;
+        justify-content: center;
+    }
+    &__center{
+        $width: 192px;
+        display: grid;
+        grid-template-columns: repeat(4, $width);
+        grid-auto-rows: $width;
+    }
+}

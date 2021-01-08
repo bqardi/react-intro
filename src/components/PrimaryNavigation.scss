@@ -1,0 +1,27 @@
+@import "../variables.scss";
+
+.primaryNavigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $mainPadding * 2;
+    padding: 0 $mainPadding;
+    height: $siteHeaderHeight / 2;
+    background-color: black;
+    border-top: 1px solid darken($gold, 35);
+    &__link{
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        &--active{
+            color: $gold;
+            cursor: default;
+        }
+        &:hover{
+            color: $hover;
+        }
+        &--active:hover{
+            color: $gold;
+        }
+    }
+}

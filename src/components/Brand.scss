@@ -1,0 +1,11 @@
+.brand{
+    $margin: 10px;
+    height: calc(100vh - 125px - #{$margin * 2});
+    max-height: 260px + $margin * 2;
+    &__image{
+        height: 100%;
+    }
+    &--small{
+        height: 180px;
+    }
+}

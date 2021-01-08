@@ -1,0 +1,10 @@
+@import "../variables.scss";
+
+.productsLayout{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    max-width: 1148px;
+    margin: 0 auto;
+    padding: $mainPadding;
+    background-color: white;
+}
